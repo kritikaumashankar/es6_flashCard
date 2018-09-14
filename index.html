@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlashCards</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>FlasCard</h1>
+			<ul class="nav nav-pills nav-fill">
+			  <li class="nav-item">
+			    <button id="playStart" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#play" aria-expanded="false" aria-controls="play">Play!</button>
+			  </li>
+			  <li class="nav-item">
+			    <button id="aed" class="btn btn-primary" type="button" data-toggle="collapse" data-target="addEditDelete" aria-expanded="false" aria-controls="addEditDelete">Q & A List</button>	
+			  </li>
+			  
+			</ul>
+		</header>
+		<section id="play">
+			<h2>Let's do some Brain Teasers</h2>
+			<button id="start" type="button" class="btn btn-primary btn-lg btn-block">Click here to Start</button>
+			<div class="card">
+				<h2><span id="question">Q: question</span></h2>
+				
+				<div id="answerDiv">
+					<h2><span id="answer">A: answer</span></h2>
+				</div>
+				<button id="ans" type="button" class="btn btn-primary btn-lg btn-block"> Click Here for answer</button>
+				<button id="quit" type="button" class="btn btn-primary btn-lg btn-block"> quit</button>
+			</div>
+		</section>
+		<section id="addEditDelete">
+			<div class="add">
+				 <label for="question">Question</label>
+				    <textarea id="addQ" ></textarea>
+					
+				  <div class="form-group">
+				    <label for="answer">Answer</label>
+				     <textarea id="addA" ></textarea>
+				  </div>
+				   <button id="addS" type="submit" class="btn btn-primary">Add</button>
+			</div>
+
+			<div class="listDisplay">
+				<div class="row justify-content-md-center" >
+				
+				  </div>
+			</div>
+
+		</section>
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
